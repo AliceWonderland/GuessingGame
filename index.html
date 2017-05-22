@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guessing Game</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" >
+</head>
+<body>
+  <div id='app' class="center container">
+    <div id='headers'>
+    <!-- Title and subtitles! -->
+    <h1 id="title" class="center">Play the Guessing Game</h1>
+    <h2 id="desc" class="center">Guess a number between 1-100!</h2>
+    </div>
+
+    <div id='main' class="center">
+      <form action="">
+        <div id='input-parent'>
+          <!-- Player's guess input, and submit button -->
+          <input id="player-input" class='center' type="text" placeholder="#" maxlength="3" autofocus="autofocus" />
+          <input id="submit" class='btn btn-success' type="button" value="Go!" />
+          <!--<button></button>-->
+        </div>
+
+        <div id='guesses'>
+          <!-- unordered list of guesses -->
+          <ul id="guess-list">
+            <li class="guess">-</li>
+            <li class="guess">-</li>
+            <li class="guess">-</li>
+            <li class="guess">-</li>
+            <li class="guess">-</li>
+          </ul>
+        </div>
+
+        <div id="menu-btns">
+          <!-- reset and hint buttons -->
+          <input id="reset" class='btn btn-warning' type="reset"> <input id="hint" class='btn btn-info' type="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div id='footer'>
+    <div class="row">
+      <div class='col-sm-4'>
+      <img src='fa-logo@2x.png'></img>
+      </div>
+
+      <div class='col-sm-4'>
+      <h4>Project by Alice Chuang</h4>
+      </div>
+
+      <div class='col-sm-4'>
+      <img id="gh-img" src='grace_hopper_academy.png'></img>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
